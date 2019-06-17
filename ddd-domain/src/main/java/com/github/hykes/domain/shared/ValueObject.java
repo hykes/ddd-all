@@ -1,0 +1,18 @@
+package com.github.hykes.domain.shared;
+
+/**
+ * 值对象接口类
+ * @author hehaiyangwork@gmail.com
+ * @date 2019-03-01 11:32:00
+ */
+public interface ValueObject<T> {
+
+  /**
+   * Value objects compare by the values of their attributes, they don't have an identity.
+   *
+   * @param other The other value object.
+   * @return <code>true</code> if the given value object's and this value object's attributes are the same.
+   */
+  boolean sameValueAs(T other);
+
+}
